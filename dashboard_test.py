@@ -26,7 +26,7 @@ def run():
 
     if uploaded_file is not None:
         # 將上傳的檔案轉換為big5編碼(有中文)
-        df = pd.read_csv(uploaded_file, encoding='utf-8', index_col=0)
+        df = pd.read_csv(uploaded_file, encoding='utf-8', sep=';', index_col=0)
 
 
         # 資料整理
